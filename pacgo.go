@@ -52,3 +52,9 @@ func makePkg(pkgName string) error {
 	return nil
 
 }
+
+func printConf() {
+	println("[pacgo]")
+	println("SigLevel = Optional TrustAll")
+	println("Server = file://" + repo)
+}

@@ -21,6 +21,7 @@ func main() {
 	newSrc := flag.String("add", "", "Indica a origem que deseja adicionar")
 	addr := flag.String("http", "", "Interface web")
 	list := flag.Bool("list", false, "Lista pacotes fontes")
+	conf := flag.Bool("conf", false, "Facilita na criação do pacman.conf")
 	make := flag.String("make", "", "Compila pacote")
 	flag.Parse()
 	switch {
@@ -44,6 +45,9 @@ func main() {
 		return
 	case *list:
 		fmt.Println(listSrc())
+		return
+	case *conf:
+		printConf()
 		return
 	default:
 		fmt.Println("-help")
