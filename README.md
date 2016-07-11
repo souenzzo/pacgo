@@ -1,6 +1,8 @@
 # pacgo
 Manage AUR packages via CLI or HTTP
 
+## I's a draft/prototype. Do not use without read the code!
+
 First, add this to `pacman.conf`
 ```
 [pacgo]
